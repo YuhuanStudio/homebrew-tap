@@ -4,7 +4,7 @@ cask "yunaudio" do
 
   url "https://github.com/YuhuanStudio/YunAudio/releases/download/v#{version}/YunAudio-#{version}-app.zip"
   name "YunAudio"
-  desc "macOS audio router with a measurable, bit-exact signal path"
+  desc "Audio router with a measurable, bit-exact signal path"
   homepage "https://github.com/YuhuanStudio/YunAudio"
 
   livecheck do
@@ -12,7 +12,7 @@ cask "yunaudio" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "YunAudio.app"
 
