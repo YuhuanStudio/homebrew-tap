@@ -1,6 +1,6 @@
 cask "yunaudio" do
-  version "0.1.5"
-  sha256 "17785f9af492847cf4e2019f9b6a1e68f17866dfb83634d117f00e8ebf0be89a"
+  version "0.1.6"
+  sha256 "646742a86f80fd04800a779d38bd58f1d0b7a93c17af1b6ab69bf94c35fed489"
 
   url "https://github.com/YuhuanStudio/YunAudio/releases/download/v#{version}/YunAudio-#{version}-app.zip"
   name "YunAudio"
@@ -11,6 +11,8 @@ cask "yunaudio" do
     url :url
     strategy :github_latest
   end
+
+  auto_updates true
 
   depends_on macos: :sonoma
 
